@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        .note {
+            text-decoration: underline;
+        }
+
+        .error {
+            text-decoration: line-through;
+        }
+
+        #head3 {
+            font-size: 3em;
+        }
+
+        .note.error {
+            color :red;
+        }
+
+        p.note {
+            font-family: D2Coding, monospace;
+        }
+
+    </style>
+</head>
+<body>
+    <!--h1#head$.note*3>lorem3-->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Pariatur, saepe explicabo.</h1>
+    <h1 id="head3" class="note">Ut, voluptas aliquam!</h1>
+
+    <!--h1#head$@4.error*3>lorem3-->
+    <h1 id="head4" class="error">Lorem, ipsum dolor.</h1>
+    <h1 id="head5" class="error">Sequi, saepe odit.</h1>
+    <h1 id="head6" class="error">Obcaecati, aspernatur exercitationem!</h1>
+    
+    <!--h1#head$@7.note.error*2>lorem3-->
+    <h1 id="head7" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head8" class="note error">Possimus, dolorem voluptatem?</h1>
+
+    <!--p.note*2>lorem-->
+    <p class="note">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur enim in vitae laboriosam possimus harum nam illo totam! Perspiciatis quod eaque iste asperiores magni aliquid deserunt laborum suscipit voluptate enim.</p>
+    <p class="note">Voluptas animi consequatur, tenetur dolores odio corporis nihil ut dolore excepturi. Maxime ea totam, numquam animi quos dolorum cumque excepturi culpa esse veniam laudantium aut itaque sunt ullam. Unde, dolor.</p>
+
+<!--붙여서 쓰면 동시에 만족하는 것, 교집합인 경우에 어떻게 적용되는지 봐라.
+두개 다 적용하라고 뜰 때 우선순위는 어떻게 될까? ex. error와 note 이거는 12번-->
+</body>
+</html>
+
+
+

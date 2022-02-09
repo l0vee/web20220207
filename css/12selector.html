@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+head
+    <style>
+        #head3 {
+            color:brown;
+        }
+        
+        .note.error {
+            color:gold;
+        }
+        .note {
+            color: blue;
+        }
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <!--두개 다 적용하라고 뜰 때 우선순위는 어떻게 될까? ex. error와 note , 여기에선 error가 적용된다.
+    순서가 중요하다. 마지막 적용한게 최종 반영, 순서대로 적용하니까. 
+    cf.selector 우선순위는 따로 있다. 
+    선택자의 우선순위: 클래스가 여러개면 보다 구체적이므로 이것부터 적용 id selector
+    (id,class,element의 개수->점수 중요도 매김 높을수록.)-->
+    
+
+    <!--h1#head$.note*2>lorem3-->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Possimus, reprehenderit quia.</h1>
+    <!--h1#head$@3.note.error*2>lorem3-->
+    <h1 id="head3" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head4" class="note error">Iure, hic maiores.</h1>
+</body>
+</html>

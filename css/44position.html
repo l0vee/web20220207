@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <style> .sub{
+        display:none;
+        position:absolute;
+        top:-5px;
+        left:118px;
+        background-color: black;
+        color:white;
+    }
+
+    ul {
+        padding:0px;
+        margin:0px;
+        list-style-type: none;
+    }
+    .sub>li {
+        padding:3px;
+        margin:0px;
+    }
+
+    .main>li {
+        width:120px;
+        position:relative;
+        padding:3px;
+        margin:0px;
+        background-color: black;
+        color:white;
+        box-sizing: border-box;
+        border:5px solid black;
+
+    }
+    .main>li:hover {
+        border-right: 5px solid yellow;
+    }
+    .main > li:hover> .sub{
+        display:block
+    }
+    </style>
+</head>
+<body>
+    <!-- ul.main>li*5>lorem1+ul.sub>li*3>lorem1 -->
+    <ul class="main">
+        <li>
+            Lorem.
+            <ul class="sub">
+                <li>
+                    Lorem.
+                </li>
+                <li>
+                    Excepturi?
+                </li>
+                <li>
+                    Eos.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Animi!
+            <ul class="sub">
+                <li>
+                    Lorem.
+                </li>
+                <li>
+                    Molestiae!
+                </li>
+                <li>
+                    Harum!
+                </li>
+            </ul>
+        </li>
+        <li>
+            Cumque!
+            <ul class="sub">
+                <li>
+                    Lorem.
+                </li>
+                <li>
+                    Cumque.
+                </li>
+                <li>
+                    Itaque.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Expedita!
+            <ul class="sub">
+                <li>
+                    Lorem.
+                </li>
+                <li>
+                    Totam?
+                </li>
+                <li>
+                    Eveniet!
+                </li>
+            </ul>
+        </li>
+        <li>
+            Aspernatur.
+            <ul class="sub">
+                <li>
+                    Lorem.
+                </li>
+                <li>
+                    Explicabo?
+                </li>
+                <li>
+                    Quod.
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

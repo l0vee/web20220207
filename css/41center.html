@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    span {
+        text-align:center;
+        background-color: gold;
+    }
+    div {
+        background-color: blue;
+        text-align: center;
+    }
+
+    #ex1 {
+        background-color: chocolate;
+        width: 300px;
+        margin:auto;
+    }
+
+    #ex2 {
+        background-color: pink;
+        width:30%
+        margin:auto;
+    }
+</style>
+</head>
+<body>
+    <p>inline 요소를 가운데 배치</p>
+
+    <!-- span>lorem1 -->
+    <div>
+        <span>Lorem.</span>
+    </div>
+
+    <p>block 요소를 가운데 배치</p>
+    <!-- #ex1>lorem1 -->
+    <div id="#ex1">lorem1</div>
+
+    <!-- #ex2>lorem2 -->
+    <div id="ex2">
+        Lorem, ipsum.
+    </div>
+</body>
+</html>
+
+span element 공간이 좁아..
+
+block이랑 inline이랑 가운데 배치하는 방법이 다르다.
+inline은 그냥 text-align:center만 하면 됨
+
+
+block은 margin auto로 두면 된다.
+(margin left right를 auto로 두면 block은 가운데에 배치된다.)
+

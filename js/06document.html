@@ -25,6 +25,20 @@
     <h1 id="head5" class="error">
         Quos, iusto.
     </h1>
+
+    <script>
+        console.log("클래스이름으로 요소 가져오기");
+        console.log(document.getElementsByClassName("note"));
+        console.log(document.getElementsByClassName("error"));
+
+        console.log("클래스로 얻어온 요소 중 특정 요소 가져오기");
+        console.log(document.getElementsByClassName("note")[0]);
+        console.log(document.getElementsByClassName("note")[1]);
+        console.log(document.getElementsByClassName("note")[2]);
+
+        console.log(document.getElementsByClassName("Error")[0]);
+        console.log(document.getElementsByClassName("Error")[1]);
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

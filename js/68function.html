@@ -11,25 +11,22 @@
 <body>
     <script>
 
-        console.log(1);
+        let twiceOrNot = function (num, str) {
+            if (num === 1) {
+                return str;
+            }
+            
+            if(num===2) {
+                return str + str;
+            }
 
-        if (false)
-        //코드블럭은 중괄호를 의미  {}
-        // 코드 블럭의 명령문이 하나면 {} 생략 가능
-        // 하지만, 꼭 작성하는 습관 가질 것
-            console.log(2);
-
-            console.log(3);
-        
-        if (true) {
-            console.log(4);
-        } else {
-            console.log(5);
         }
 
+        console.log(twiceOrNot(1,"spring")); //1이면 그대로 return해서 spring이 출력
+        console.log(twiceOrNot(2,"spring")); //2면 두번 return해서 springspring
 
-      
-
+        console.log(twiceOrNot(1,"hi")); //hi
+        console.log(twiceOrNot(2,"hi")); //hihi
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

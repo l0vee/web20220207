@@ -10,27 +10,36 @@
 </head>
 <body>
     <script>
-
-        console.log(1);
-
-        if (false)
-        //코드블럭은 중괄호를 의미  {}
-        // 코드 블럭의 명령문이 하나면 {} 생략 가능
-        // 하지만, 꼭 작성하는 습관 가질 것
-            console.log(2);
-
-            console.log(3);
+        let a = function() {
+            console.log(1); //1출력
+        }
         
-        if (true) {
-            console.log(4);
-        } else {
-            console.log(5);
+        let b = function() {
+            let c =2;
+            console.log(c); //bc둘다실행안됨
         }
 
+        let d =function () {
+            let e=3;
+            console.log(e);//마찬가지로 de둘다실행안됨
+        }
 
-      
+        a(); //a함수 실행으로 1출력
+        a(); //a함수 실행으로 1출력
+        b(); //b함수 실행돼서 2출력
 
+        //parameter (매개변수) : 함수 내에서 사용하는 변수, 값을 호출할 때 받는다. 여기선 g
+        // argument : 넘겨준 값 (인자,인수) 여기선 10, 50, 100, hello, true 등
 
+        let f = function (g) {
+            console.log(g);
+        }
+
+        f(10); //10
+        f(50); //50
+        f(100); //100
+        f("hello"); //hello
+        f(true); //true
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

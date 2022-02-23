@@ -10,10 +10,13 @@
     </style>
     <script>
         $(document).ready(function(){
-            $("h1".clidk(function(){
-                // console.log($(this).html()); //안쪽에 있는 모든 컨텐츠. innerHTML이랑 같음 밑에건 TEXT만
+            $("h1").click(function(){
+                // console.log($(this).html());
+                console.log($(this).html());
+                console.log(this.innerHTML);
+                 //안쪽에 있는 모든 컨텐츠. innerHTML이랑 같음 밑에건 TEXT만
                 console.log($(this).text());
-            }));
+            });
         });
     </script>
 </head>
